@@ -56,3 +56,45 @@ time.sleep(300)
 
 # Close the browser
 driver.quit()
+
+
+******python script for google web elements**
+**
+
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+# Initialize the Chrome driver (make sure chromedriver is installed and in PATH)
+driver = webdriver.Chrome()
+
+# Open Google homepage
+driver.get("https://www.google.com")
+time.sleep(300)
+driver.maximize_window()
+
+# Example 1: Locate the search box by its name attribute
+search_box = driver.find_element(By.NAME, "q")
+print("Search box tag name:", search_box.tag_name)
+print("Search box is displayed:", search_box.is_displayed())
+
+# Example 2: Inspect attributes of the search box
+print("Search box 'title' attribute:", search_box.get_attribute("title"))
+print("Search box 'aria-label' attribute:", search_box.get_attribute("aria-label"))
+
+# Example 3: Locate and inspect the 'Google Search' button
+search_button = driver.find_element(By.NAME, "btnK")
+print("Search button text:", search_button.get_attribute("value"))
+print("Search button is enabled:", search_button.is_enabled())
+
+# Example 4: Locate and inspect the 'Images' link
+images_link = driver.find_element(By.LINK_TEXT, "Images")
+print("Images link href:", images_link.get_attribute("href"))
+print("Images link is displayed:", images_link.is_displayed())
+
+# Pause to visually confirm
+time.sleep(5)
+
+# Close the browser
+driver.quit()
