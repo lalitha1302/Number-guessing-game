@@ -11,7 +11,6 @@
  padding: 20px;
  }
  td {
-CSE-DataScience_FSD(SEC) by KDC Page 22 of 43
  padding: 10px;
  }
  h2 {
@@ -158,7 +157,6 @@ required></textarea></td>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>HTML5 Semantic Tags Example</title>
-CSE-DataScience_FSD(SEC) by KDC Page 33 of 43
  <style>
  body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
  header, nav, main, aside, footer { padding: 10px; }
@@ -216,5 +214,165 @@ CSE-DataScience_FSD(SEC) by KDC Page 34 of 43
  <footer>
  <p>&copy; 2025 My Semantic Webpage | Designed by Student</p>
  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+**8. Program Code**
+<!DOCTYPE html>
+CSE-DataScience_FSD(SEC) by KDC Page 36 of 43
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>HTML5 Audio and Video Embedding</title>
+ <style>
+ body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+ h1 { color: #4CAF50; }
+ audio, video { margin: 20px auto; display: block; }
+ </style>
+</head>
+<body>
+ <h1>HTML5 Multimedia Embedding</h1>
+ <h2>Audio Example</h2>
+ <audio controls>
+ <source src="sample-audio.mp3" type="audio/mpeg">
+ <source src="sample-audio.ogg" type="audio/ogg">
+ Your browser does not support the audio element.
+ </audio>
+ <h2>Video Example</h2>
+ <video width="480" height="270" controls poster="poster-image.jpg">
+ <source src="sample-video.mp4" type="video/mp4">
+ <source src="sample-video.webm" type="video/webm">
+ <source src="sample-video.ogg" type="video/ogg">
+ Your browser does not support the video element.
+ </video>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+**9 Program Code**
+**HTML File: css_demo.html**
+<!DOCTYPE html>
+<html lang="en">
+CSE-DataScience_FSD(SEC) by KDC Page 39 of 43
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Types Example</title>
+ <!-- Internal CSS -->
+ <style>
+ h1 {
+ color: green;
+ text-align: center;
+ }
+ p {
+ font-size: 18px;
+ font-family: Arial, sans-serif;
+ }
+ </style>
+ <!-- External CSS -->
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Inline CSS -->
+ <h1 style="background-color: yellow;">Welcome to CSS Styling</h1>
+ <p>This paragraph is styled with internal CSS.</p>
+ <div class="external-style">
+ This section is styled using external CSS.
+ </div>
+</body>
+</html>
+**External CSS File: styles.css**
+.external-style {
+ color: white;
+ background-color: navy;
+ padding: 15px;
+ border-radius: 8px;
+ text-align: center;
+}
+
+
+
+
+
+
+**10 Program Code**
+**HTML File: selectors_demo.html**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS Selector Demonstration</title>
+ <style>
+ /* Simple Selectors */
+ h1 {
+ color: darkblue;
+ text-align: center;
+CSE-DataScience_FSD(SEC) by KDC Page 42 of 43
+ }
+ .highlight {
+ background-color: yellow;
+ }
+ #main-title {
+ text-transform: uppercase;
+ }
+ /* Combinator Selectors */
+ div p { color: green; } /* Descendant */
+ ul > li { color: brown; } /* Child */
+ h2 + p { font-style: italic; } /* Adjacent sibling */
+ h2 ~ p { background-color: #f0f0f0; } /* General sibling */
+ /* Pseudo-classes */
+ a:hover { color: red; }
+ p:first-child { font-weight: bold; }
+ input:focus { border: 2px solid blue; }
+ /* Pseudo-elements */
+ p::first-letter { font-size: 200%; color: purple; }
+ p::after { content: " ★"; color: gold; }
+ /* Attribute Selectors */
+ input[type="text"] { background-color: lightyellow; }
+ a[target="_blank"] { border-bottom: 2px dashed orange; }
+ </style>
+</head>
+<body>
+ <h1 id="main-title">CSS Selectors Example</h1>
+ <div>
+ <p>This paragraph is a descendant of a div.</p>
+ <p class="highlight">This one is highlighted using a class.</p>
+ </div>
+ <h2>List Example</h2>
+ <ul>
+ <li>Item 1 (Child selector applies)</li>
+ <li>Item 2</li>
+ </ul>
+ <p>This paragraph comes after h2 (Adjacent selector applies).</p>
+ <p>Another paragraph after h2 (General sibling selector applies).</p>
+ <h2>Links Example</h2>
+ <a href="https://example.com" target="_blank">External Link</a> 
+ <a href="page.html">Internal Link</a>
+ <h2>Form Example</h2>
+ <form>
+ <input type="text" placeholder="Enter text here">
+ <input type="password" placeholder="Password">
+ </form>
 </body>
 </html>
